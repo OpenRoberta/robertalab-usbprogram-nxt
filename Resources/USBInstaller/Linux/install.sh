@@ -30,19 +30,19 @@ else
   echo 'SUBSYSTEM=="usb", DRIVER=="usb", ATTRS{idVendor}=="03eb", ATTRS{idProduct}=="6124", GROUP="lego", MODE="0660"' >> "/etc/udev/rules.d/70-lego.rules"
 fi
 
-echo "[Desktop Entry]" > "/usr/share/applications/ORUSB.desktop"
-echo "Version=2.0.4" >> "/usr/share/applications/ORUSB.desktop"
-echo "Name=Open Roberta USB" >> "/usr/share/applications/ORUSB.desktop"
-echo "Exec=$dir/java/bin/java -jar -Dfile.encoding=utf-8 $dir/OpenRobertaUSB.jar" >> "/usr/share/applications/ORUSB.desktop"
-echo "Path=$dir" >> "/usr/share/applications/ORUSB.desktop"
-echo "Icon=$dir/OR.png" >> "/usr/share/applications/ORUSB.desktop"
-echo "Terminal=false" >> "/usr/share/applications/ORUSB.desktop"
-echo "Type=Application" >> "/usr/share/applications/ORUSB.desktop"
+echo "[Desktop Entry]" > "/usr/share/applications/ORUSBNXT.desktop"
+echo "Version=1.0.0" >> "/usr/share/applications/ORUSBNXT.desktop"
+echo "Name=Open Roberta USB NXT" >> "/usr/share/applications/ORUSBNXT.desktop"
+echo "Exec=$dir/java/bin/java -jar -Dfile.encoding=utf-8 $dir/OpenRobertaUSBNXT.jar" >> "/usr/share/applications/ORUSBNXT.desktop"
+echo "Path=$dir" >> "/usr/share/applications/ORUSBNXT.desktop"
+echo "Icon=$dir/OR.png" >> "/usr/share/applications/ORUSBNXT.desktop"
+echo "Terminal=false" >> "/usr/share/applications/ORUSBNXT.desktop"
+echo "Type=Application" >> "/usr/share/applications/ORUSBNXT.desktop"
 #echo "StartupNotify=True" >> "/usr/share/applications/ORUSB.desktop"
-echo "Categories=Application;Development;" >> "/usr/share/applications/ORUSB.desktop"
+echo "Categories=Application;Development;" >> "/usr/share/applications/ORUSBNXT.desktop"
 
 
-chmod u+x "/usr/share/applications/ORUSB.desktop"
+chmod u+x "/usr/share/applications/ORUSBNXT.desktop"
 
 groupadd lego
 gpasswd -a ${SUDO_USER:-$USER} lego
