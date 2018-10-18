@@ -5,7 +5,7 @@ import java.util.Properties;
 
 public class Utils {
 
-    private static final String PROPERTY_DEFAULT_PATH = "openRobertaUSB.properties";
+    private static final String PROPERTY_DEFAULT_PATH = "OpenRobertaUSBNXT.properties";
     private static Properties robertaProperties;
     String result = "";
     static {
