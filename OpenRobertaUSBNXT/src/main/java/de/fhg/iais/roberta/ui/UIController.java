@@ -44,7 +44,6 @@ public class UIController<ObservableObject> implements Observer {
 
     public class ConnectActionListener implements ActionListener {
 
-        @Override
         public void actionPerformed(ActionEvent e) {
             AbstractButton b = (AbstractButton) e.getSource();
             if ( b.getActionCommand().equals("close") ) {
@@ -114,10 +113,11 @@ public class UIController<ObservableObject> implements Observer {
 
     public void closeApplication() {
         if ( this.connected ) {
-            String[] buttons = {
-                this.rb.getString("close"),
-                this.rb.getString("cancel")
-            };
+            String[] buttons =
+                {
+                    this.rb.getString("close"),
+                    this.rb.getString("cancel")
+                };
             int n =
                 ORAPopup.showPopup(
                     this.conView,
@@ -143,7 +143,6 @@ public class UIController<ObservableObject> implements Observer {
         }
     }
 
-    @Override
     public void update(Observable arg0, Object arg1) {
         Connector.State state = (Connector.State) arg1;
         switch ( state ) {

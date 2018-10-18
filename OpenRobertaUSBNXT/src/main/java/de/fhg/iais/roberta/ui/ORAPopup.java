@@ -26,7 +26,6 @@ public class ORAPopup extends JOptionPane {
             oraButton.setText(txtButtons[i]);
             oraButton.addActionListener(new ActionListener() {
 
-                @Override
                 public void actionPerformed(ActionEvent e) {
                     JOptionPane pane = (JOptionPane) ((JComponent) e.getSource()).getParent().getParent();
                     pane.setValue(oraButton);
@@ -48,8 +47,13 @@ public class ORAPopup extends JOptionPane {
         if ( icon == null ) {
             icon = new ImageIcon(ORAPopup.class.getClassLoader().getResource("warning-outline.png"));
         }
-        return showPopup(component, title, text, icon, new String[] {
-            "OK"
-        });
+        return showPopup(
+            component,
+            title,
+            text,
+            icon,
+            new String[] {
+                "OK"
+            });
     }
 }

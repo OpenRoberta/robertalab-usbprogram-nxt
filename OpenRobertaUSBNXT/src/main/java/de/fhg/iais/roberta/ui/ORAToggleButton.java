@@ -26,7 +26,6 @@ public class ORAToggleButton extends JToggleButton {
         SwingUtilities.updateComponentTreeUI(this);
         this.getModel().addChangeListener(new ChangeListener() {
 
-            @Override
             public void stateChanged(ChangeEvent e) {
                 ButtonModel b = (ButtonModel) e.getSource();
                 if ( b.isRollover() ) {

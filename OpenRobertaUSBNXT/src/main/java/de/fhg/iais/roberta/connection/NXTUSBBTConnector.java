@@ -35,14 +35,12 @@ public class NXTUSBBTConnector extends Observable implements Runnable, Connector
         this.serverAddress = this.serverIp + ":" + this.serverPort;
     }
 
-    @Override
     public boolean findRobot() {
         DiscoverNXT discoverNXT = new DiscoverNXT();
         return discoverNXT.discover();
 
     }
 
-    @Override
     public void run() {
         log.config("Starting NXT Connector Thread.");
         this.servcomm = new ServerCommunicator(this.serverAddress);
@@ -221,12 +219,10 @@ public class NXTUSBBTConnector extends Observable implements Runnable, Connector
         notifyConnectionStateChanged(this.state);
     }
 
-    @Override
     public void userPressConnectButton() {
         this.state = State.CONNECT_BUTTON_IS_PRESSED;
     }
 
-    @Override
     public void userPressDisconnectButton() {
         this.userDisconnect = true;
         resetLastConnectionData();
@@ -239,40 +235,33 @@ public class NXTUSBBTConnector extends Observable implements Runnable, Connector
         this.brickName = "";
     }
 
-    @Override
     public void close() {
         userPressDisconnectButton();
         this.servcomm.shutdown();
     }
 
-    @Override
     public void notifyConnectionStateChanged(State state) {
         setChanged();
         notifyObservers(state);
     }
 
-    @Override
     public String getToken() {
         return this.token;
     }
 
-    @Override
     public String getBrickName() {
         return this.brickName;
     }
 
-    @Override
     public void update() {
         // no firmware update intended for NXT
     }
 
-    @Override
     public void updateCustomServerAddress(String customServerAddress) {
         this.servcomm.updateCustomServerAddress(customServerAddress);
         log.info("Now using custom address " + customServerAddress);
     }
 
-    @Override
     public void resetToDefaultServerAddress() {
         this.servcomm.updateCustomServerAddress(this.serverAddress);
         log.info("Now using default address " + this.serverAddress);

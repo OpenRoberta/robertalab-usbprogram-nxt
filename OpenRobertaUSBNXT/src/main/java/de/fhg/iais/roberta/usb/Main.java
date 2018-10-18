@@ -41,7 +41,6 @@ public class Main {
         configureLogger();
 
         SwingUtilities.invokeLater(new Runnable() {
-            @Override
             public void run() {
                 prepareUI();
                 ResourceBundle messages = getLocals();

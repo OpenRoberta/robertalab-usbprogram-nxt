@@ -14,9 +14,9 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-		<source.level>1.6</source.level>
-		<maven.compiler.target>1.6</maven.compiler.target>
-		<maven.compiler.source>1.6</maven.compiler.source>
+		<source.level>1.9</source.level>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<maven.compiler.source>1.8</maven.compiler.source>
 	</properties>
 	<repositories>
 		<repository>
@@ -154,7 +154,7 @@
 								<path>java/</path>
 								<bundledJre64Bit>false</bundledJre64Bit>
 								<bundledJreAsFallback>false</bundledJreAsFallback>
-								<minVersion>1.6.0_0</minVersion>
+								<minVersion>1.8.0_0</minVersion>
 								<maxVersion></maxVersion>
 								<jdkPreference>jreOnly</jdkPreference>
 								<runtimeBits>64/32</runtimeBits>
