@@ -204,7 +204,7 @@ public class ConnectionView extends JFrame {
         this.pnlCustomHeading.add(this.customheading);
         this.pnlCustomAddress.add(this.customipDesc);
         this.customipDesc.setText(this.messages.getString("ip"));
-        this.pnlCustomAddress.add(Box.createVerticalGlue());
+//        this.pnlCustomAddress.add(Box.createVerticalGlue());
         this.pnlCustomAddress.add(this.customip);
         this.pnlCustomAddress.add(Box.createHorizontalStrut(1));
         this.pnlCustomAddress.add(this.customportDesc);

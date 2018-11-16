@@ -6,7 +6,7 @@
 	<properties>
 		<!-- the server and the crosscompiler SHOULD be compatible between(including) the following two versions of software deployed on the ROBOT -->
 		<validversionrange.From>1.4.0</validversionrange.From>
-		<validversionrange.To>2.4.0</validversionrange.To>
+		<validversionrange.To>3.1.0</validversionrange.To>
 
 		<maven.build.timestamp.format>yyyy-MM-dd HH:mm:ss</maven.build.timestamp.format>
 		<buildTimeStamp>${maven.build.timestamp}</buildTimeStamp>
@@ -14,9 +14,9 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-		<source.level>1.9</source.level>
-		<maven.compiler.target>1.8</maven.compiler.target>
-		<maven.compiler.source>1.8</maven.compiler.source>
+		<source.level>1.6</source.level>
+		<maven.compiler.target>1.6</maven.compiler.target>
+		<maven.compiler.source>1.6</maven.compiler.source>
 	</properties>
 	<repositories>
 		<repository>

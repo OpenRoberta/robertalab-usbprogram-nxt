@@ -4,6 +4,7 @@
 */target
 *.msi
 *.wixobj
+*.wixpdb
 **/.project
 **/.settings
 **/bin

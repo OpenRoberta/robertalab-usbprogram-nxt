@@ -4,25 +4,23 @@
 %   may be removed in a future release
 ! alt-rt.jar
 java/math
-java/text
 java/util
-sun/misc
+! alt-string.jar
+java/lang
 # charsets.jar
 META-INF/services/java.nio.charset.spi.CharsetProvider
 sun/nio
-sun/awt
 sun/io
 # jce.jar
 javax/crypto
 sun/security
-META-INF/ORACLE_J.RSA
-META-INF/ORACLE_J.SF
-# jfr.jar
-oracle/jrockit/
-com/oracle/
-jdk/internal/
+META-INF/JCE_RSA.RSA
+META-INF/JCE_RSA.SF
 ! jsse.jar
-sun/security
+com/sun/security/
+sun/net
+javax/security
+javax/net
 com/sun/net/
 ! management-agent.jar
 @ resources.jar
@@ -38,8 +36,9 @@ META-INF/services/javax.sound.midi.spi.MidiDeviceProvider
 sun/net
 META-INF/services/javax.sound.sampled.spi.AudioFileWriter
 com/sun/imageio/
-META-INF/services/sun.java2d.pipe.RenderingEngine
+com/sun/servicetag/
 META-INF/services/java.sql.Driver
+META-INF/mimetypes.default
 sun/org
 META-INF/services/javax.sound.midi.spi.MidiFileWriter
 sun/rmi
@@ -47,12 +46,10 @@ javax/sql
 META-INF/services/javax.script.ScriptEngineFactory
 com/sun/rowset/
 META-INF/services/javax.print.StreamPrintServiceFactory
-java/lang
+META-INF/mailcap.default
 sun/text
 javax/xml
 META-INF/services/javax.sound.sampled.spi.MixerProvider
-META-INF/services/sun.java2d.cmm.PCMM
-META-INF/services/com.sun.tools.internal.xjc.Plugin
 com/sun/java/swing/
 com/sun/jndi/
 com/sun/xml/
@@ -60,41 +57,65 @@ com/sun/org/
 META-INF/services/javax.sound.sampled.spi.FormatConversionProvider
 ! rt.jar
 com/sun/java/util/jar/pack/
-java/
-org/ietf/
 com/sun/beans/
-com/sun/tracing/
+org/ietf/
 com/sun/java/browser/
-com/sun/corba/
-com/sun/media/
-com/sun/awt/
-com/sun/management/
-sun/
-com/sun/jmx/
-com/sun/demo/
-com/sun/imageio/
-com/sun/net/
+sun/jkernel
+sun/font
+sun/awt
 com/sun/rmi/
 org/w3c/
-com/sun/swing/
 com/sun/activation/
+sun/rmi
+sun/beans
 com/sun/script/
-com/sun/nio/
+sun/management
+sun/applet
 com/sun/rowset/
-org/jcp/
+sun/io
+sun/audio
+sun/text
+sunw/util/
+sun/reflect
+sunw/io/
+com/sun/java/swing/
+com/sun/xml/
+com/sun/accessibility/
+sun/instrument
+java/
+com/sun/corba/
+com/sun/media/
+sun/swing
+sun/print
+sun/dc
+com/sun/management/
+com/sun/awt/
+sun/usagetracker
+sun/security
+sun/jdbc
+sun/net
+com/sun/jmx/
+sun/nio
+com/sun/demo/
+com/sun/imageio/
+com/sun/servicetag/
+sun/corba
+com/sun/net/
+com/sun/swing/
+sun/org
 com/sun/istack/
+org/jcp/
 com/sun/naming/
-org/xml/
 org/omg/
+org/xml/
+sun/tools
 com/sun/security/
 com/sun/image/
-sunw/util/
-sunw/io/
-com/sun/xml/
-com/sun/java/swing/
-com/oracle/
-com/sun/java_cup/
+sun/util
 com/sun/jndi/
-com/sun/accessibility/
+com/sun/java_cup/
+com/oracle/
+sun/misc
 com/sun/org/
 javax/
+sun/java2d
