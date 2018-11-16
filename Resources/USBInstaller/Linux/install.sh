@@ -33,7 +33,7 @@ fi
 echo "[Desktop Entry]" > "/usr/share/applications/ORUSBNXT.desktop"
 echo "Version=1.0.0" >> "/usr/share/applications/ORUSBNXT.desktop"
 echo "Name=Open Roberta USB NXT" >> "/usr/share/applications/ORUSBNXT.desktop"
-echo "Exec=$dir/java/bin/java -jar -Dfile.encoding=utf-8 $dir/OpenRobertaUSBNXT.jar" >> "/usr/share/applications/ORUSBNXT.desktop"
+echo "Exec=java -jar -Dfile.encoding=utf-8 $dir/OpenRobertaUSBNXT.jar" >> "/usr/share/applications/ORUSBNXT.desktop"
 echo "Path=$dir" >> "/usr/share/applications/ORUSBNXT.desktop"
 echo "Icon=$dir/OR.png" >> "/usr/share/applications/ORUSBNXT.desktop"
 echo "Terminal=false" >> "/usr/share/applications/ORUSBNXT.desktop"
