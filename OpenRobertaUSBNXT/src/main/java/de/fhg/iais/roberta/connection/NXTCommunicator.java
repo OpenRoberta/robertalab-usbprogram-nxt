@@ -162,7 +162,7 @@ public class NXTCommunicator {
                 sleep(200); // give the nxt time to react
                 writeFileToNXT(binaryfile, nxtFileName);
                 sleep(200);
-                this.nxtCommand.startProgram(nxtFileName); //this will execute the program but we do not want
+                // this.nxtCommand.startProgram(nxtFileName); //this will execute the program but we do not want
             } finally {
                 disconnect();
             }
