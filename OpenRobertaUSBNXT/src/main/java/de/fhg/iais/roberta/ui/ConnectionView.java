@@ -32,7 +32,7 @@ import de.fhg.iais.roberta.ui.UIController.ConnectActionListener;
 public class ConnectionView extends JFrame {
 
     private static final long serialVersionUID = 1L;
-    private static final int WIDTH = 310;
+    private static final int WIDTH = 350;
     private static final int HEIGHT = 400;
     private static final int ADVANCED_HEIGHT = 460;
 
@@ -83,7 +83,7 @@ public class ConnectionView extends JFrame {
     private void initGUI() {
         this.setSize(WIDTH, HEIGHT);
         this.setPreferredSize(new Dimension(WIDTH, HEIGHT));
-        this.setResizable(false);
+        this.setResizable(true);
         this.setDefaultCloseOperation(WindowConstants.DO_NOTHING_ON_CLOSE);
         this.setLocationRelativeTo(null);
 
@@ -204,7 +204,7 @@ public class ConnectionView extends JFrame {
         this.pnlCustomHeading.add(this.customheading);
         this.pnlCustomAddress.add(this.customipDesc);
         this.customipDesc.setText(this.messages.getString("ip"));
-//        this.pnlCustomAddress.add(Box.createVerticalGlue());
+        //        this.pnlCustomAddress.add(Box.createVerticalGlue());
         this.pnlCustomAddress.add(this.customip);
         this.pnlCustomAddress.add(Box.createHorizontalStrut(1));
         this.pnlCustomAddress.add(this.customportDesc);
@@ -284,15 +284,15 @@ public class ConnectionView extends JFrame {
 
     public void showAdvancedOptions() {
         if ( this.checkCustomAddress.isSelected() ) {
-            this.setSize(new Dimension(WIDTH, ADVANCED_HEIGHT));
-            this.setPreferredSize(new Dimension(WIDTH, ADVANCED_HEIGHT));
+            this.setSize(new Dimension(this.getWidth(), ADVANCED_HEIGHT));
+            this.setPreferredSize(new Dimension(this.getWidth(), ADVANCED_HEIGHT));
             this.pnlCustomHeading.setVisible(true);
             this.pnlCustomAddress.setVisible(true);
             this.centerPanel.revalidate();
             //this.revalidate();
         } else {
-            this.setSize(new Dimension(WIDTH, HEIGHT));
-            this.setPreferredSize(new Dimension(WIDTH, HEIGHT));
+            this.setSize(new Dimension(this.getWidth(), HEIGHT));
+            this.setPreferredSize(new Dimension(this.getWidth(), HEIGHT));
             this.pnlCustomHeading.setVisible(false);
             this.pnlCustomAddress.setVisible(false);
             this.centerPanel.revalidate();
