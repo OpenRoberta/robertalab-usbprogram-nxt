@@ -7,15 +7,15 @@ a usb connection.
 
 #### Clone the repository and compile
 
-    git clone git://github.com/OpenRoberta/robertalab-usbprogram.git
-    cd robertalab-usbprogram/OpenRobertaUSB
+    git clone git://github.com/OpenRoberta/robertalab-usbprogram-nxt.git
+    cd robertalab-usbprogram-nxt/OpenRobertaUSBNXT
     mvn clean install
 
 
 ### Run USB program
 For running the USB program use 32bit Java.
 
-    java -jar -Dfile.encoding=utf-8 ./OpenRobertaUSB/target/OpenRobertaUSB-*-SNAPSHOT.jar
+    java -jar -Dfile.encoding=utf-8 ./OpenRobertaUSBNXT/target/OpenRobertaUSB-*-SNAPSHOT.jar
 
 #### Linux and NXT
 For using the NXT install the following libraries
