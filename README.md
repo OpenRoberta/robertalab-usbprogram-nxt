@@ -15,7 +15,7 @@ a usb connection.
 ### Run USB program
 For running the USB program use 32bit Java.
 
-    java -jar -Dfile.encoding=utf-8 ./OpenRobertaUSBNXT/target/OpenRobertaUSB-*-SNAPSHOT.jar
+    java -jar -Dfile.encoding=utf-8 ./OpenRobertaUSBNXT/target/OpenRobertaUSBNXT-*-SNAPSHOT.jar
 
 #### Linux and NXT
 For using the NXT install the following libraries
